@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What's On Your To-Do List?</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>What's On Your To-Do List?</h1>
+      <form id="taskForm">
+        <input
+          type="text"
+          name="newInput"
+          id="newInput"
+          placeholder="What Do you Have to Do Today?"
+        />
+        <input type="submit" id="taskSubmit" value="New Task" readonly />
+      </form>
+    </header>
+
+    <main>
+      <section class="taskList">
+        <h2>Tasks For Today</h2>
+        <div id="tasks">
+          <div class="taskItem">
+            <div class="taskContent">
+              <input type="text" class="text" value="New Task" readonly />
+            </div>
+            <div class="manage">
+              <button class="edit">Edit Item</button>
+              <button class="delete">Delete</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
